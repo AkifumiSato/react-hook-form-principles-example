@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.wrapper {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.formInner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.formItem > dt {
+  font-weight: bold;
+}
+
+.formItemContents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputWrapper {
+  position: relative;
+  padding-top: 20px;
+}
