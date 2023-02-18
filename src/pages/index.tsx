@@ -1,5 +1,6 @@
+import CreditModal from "@/components/CreditModal";
 import Head from "next/head";
-import { Input, Text, Button, Modal, Row } from "@nextui-org/react";
+import { Input, Text, Button, Modal } from "@nextui-org/react";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 
@@ -39,26 +40,7 @@ export default function Home() {
                     open={visible}
                     onClose={closeHandler}
                   >
-                    <Modal.Header>
-                      <Text id="modal-title" size={15}>
-                        クレジットカード番号を入力してください
-                      </Text>
-                    </Modal.Header>
-                    <Modal.Body>
-                      <Input
-                        clearable
-                        bordered
-                        fullWidth
-                        color="primary"
-                        size="lg"
-                        placeholder="xxxx-yyyy-zzzz"
-                      />
-                    </Modal.Body>
-                    <Modal.Footer>
-                      <Button auto onPress={closeHandler}>
-                        保存
-                      </Button>
-                    </Modal.Footer>
+                    <CreditModal closeHandler={closeHandler} />
                   </Modal>
                 </dd>
               </dl>
